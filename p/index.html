@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>Bachi Streaming</title>
+<title>RADIO</title>
 <meta name="theme-color" content="#3811D4">
 </head>
 <body>
@@ -16,7 +16,7 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <title>Video de fondo de página responsive</title>
+    <title>SIENTEME FM</title>
     <style>
     
     
@@ -77,7 +77,7 @@ video {
   <body>
     <div class="video-background">
       <video autoplay muted loop id="myVideo">
-        <source src="https://joy1.videvo.net/videvo_files/video/free/2014-12/small_watermarked/Radio_Broadcasting_Mic_and_Board_preview.webm" type="video/mp4">
+        <source src="https://pixabay.com/es/videos/radio-consola-sinta-154428">
         <source src="video.webm" type="video/webm">
       </video>
 
@@ -98,49 +98,38 @@ video {
 <div id="lunaradio" style="width:100%; height: 100%; position: absolute; left:0; top:0; z-index: 300; ">
 </div>			
 
-<script> $("#lunaradio")
-.lunaradio({ 
-     userinterface: "big",
-	backgroundcolor: "#0E2749",
-	fontcolor: "#ffffff",
-	hightlightcolor: "#ED145B",
-	fontname: "Saira Condensed",
-	googlefont: "Saira+Condensed:wght@100",
-	fontratio: "0.5",
-        backgroundImage:"",
-	radioname: "SIENTEME FM",
-	scroll: "true",
-	coverimage: "img/audimic.png",
-	usevisualizer: "fake",
-	coverstyle: "true",
-	visualizertype: "2",
-	multicolorvisualizer: "true",
-    color1: "#f6f6f6",
-    color2: "#323edd",
-    color3: "#fc5404",
-    color4: "#fa225b",
-	itunestoken: "1000lIPN",
-	metadatatechnic: "corsproxy",
-	ownmetadataurl: "",
-	streamurl: "http://tu IP de radio:1234/;",
-	streamtype: "",
-	icecastmountpoint: "",
-	radionomyid: "",
-	radionomyapikey: "",
-	radiozenoid: "",
-	radiojarid: "",
-	radiocoid: "",
-	shoutcastpath: "/stream",
-	shoutcastid: "1",
-	streamsuffix: "",
-	metadatainterval: "20000",
-	volume: "100",
-	debug: "false",
-	usestreamcorsproxy: "false", 
-	corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
-	autoplay:"true",
-	}); 
+<script>
+$("#lunaradio").lunaradio({
+userinterface: "big", 
+backgroundcolor: "",
+fontcolor: "#6FD929",
+hightlightcolor: "#610094", 
+fontname: "Unica One", 
+googlefont: "Unica+One&display=swap", 
+fontratio: "0.4", 
+radioname: "Bachi Streaming", 
+scroll: "true", 
+coverimage: "js/logo.jpg",
+onlycoverimage: "false",
+coverstyle: "animated",
+usevisualizer: "real", 
+visualizertype: "4", 
+metadatatechnic: "",
+ownmetadataurl: "", 
+streamurl: "https://radios.servicioselbachi.com:8004", 
+streamtype: "shoutcast2", 
+icecastmountpoint: "",
+shoutcastpath: "/stream",
+shoutcastid: "1", 
+streamsuffix: "", 
+radionomyid: "", 
+radionomyapikey: "",
+radiojarid: "",  
+radiocoid: "",
+itunestoken: "1000lIPN", 
+metadatainterval: "5000", 
+volume: "100",
+debug: "false",
+autoplay: "true"
+});
 </script>
-   
-</body>
-</html>
